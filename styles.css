@@ -1,0 +1,290 @@
+/*
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+*/
+
+html {
+    background-color: #0D1F2D;
+    color: #F0EAD6;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+#hero {
+    width: 100vw;
+    height: 100vh;
+    height: 100svh;
+
+      --s: 100px;
+      
+      --_g: #0000 90deg,rgba(255, 255, 255, 0.008) 0;
+      background: 
+        conic-gradient(from 90deg at 2px 2px,var(--_g)),
+        conic-gradient(from 90deg at 1px 1px,var(--_g));
+      background-size: var(--s) var(--s), calc(var(--s)/5) calc(var(--s)/5);
+    
+      margin: 0;
+      padding: 0;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    margin: -8px 0 0 -8px;
+    padding: 0;
+    height: 100px;
+    background-color: #172836;
+}
+
+#logo {
+    width: 120px;
+    aspect-ratio: 2.7 / 1;
+    margin: 0 0 0 5%;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+
+    margin: 0 5% 0 0;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #F0EAD6;
+    margin: 6px 0;
+    transition: 0.3s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  #menuitems {
+    width: 100vw;
+    height: calc(100% - 100px);
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-out;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 50vh;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+
+  .menulinkscont {
+    width: 260px;
+    height: 90px;
+
+    border: solid;
+    background-color: #3773ff05;
+    border-color: #3772FF33;
+    border-radius: 20px;
+    text-decoration: none;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    transition: transform .2s;
+  }
+
+  .menulinkscont:hover {
+    background-color: #3773ff1a;
+    border-color: #3772FF80;
+    transform: scale(1.1);
+  }
+
+  .menulinks {
+    width: 100%;
+    height: fit-content;
+    padding: 30px;
+    border-radius: 20px;
+
+    color: #F0EAD6;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+
+  /* Intro and Hero section*/
+
+  #introcenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    width: 100svw;
+    height: calc(100vh - 100px);
+  }
+
+  #intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    width: 1400px;
+    height: 585px;
+    border-radius: 30px;
+
+    background-color: #092338;
+    border: solid;
+    border-color: #33419533;
+    margin: 0;
+  }
+
+  #welcome {
+    font-size: 96px;
+    margin: 0;
+    padding: 0;
+  }
+
+  #name {
+    color: #FDCA40;
+  }
+
+  #desc {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 200;
+  }
+
+  #myprojectsbtn {
+    width: 285px;
+    height: 60px;
+    margin: 30px 0 0 0;
+
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+
+    background-color: #334195;
+    color: #F0EAD6;
+
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #1E3371;
+  }
+
+  a {
+    text-decoration: none;
+    color: #F0EAD6;
+  }
+
+  /* Responsiveness */
+
+  @media screen and (max-width: 1450px) {
+    #intro {
+      width: 90vw;
+      height: calc(90vh - 100px);
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    #welcome {
+      font-size: 80px;
+      width: 400px;
+      text-align: center;
+    }
+
+    #name {
+      font-size: 90px;
+    }
+
+    #desc {
+      margin-top: 20px;
+      font-size: 26px;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    #welcome {
+      font-size: 60px;
+    }
+
+    #name {
+      font-size: 65px;
+    }
+
+    #desc {
+      margin-top: 10px;
+      font-size: 19px;
+    }
+  }
+
+
+  @media screen and (max-width: 450px) {
+    #nav {
+      width: 100vw;
+      height: 80px;
+      margin-left: 0px;
+    }
+
+    #hero {
+      margin: 0 0 0 -8px;
+    }
+
+    #logo {
+      width: 100px;
+    }
+
+    #body {
+      width: 100vw;
+    }
+
+    #welcome {
+      width: 300px;
+      font-size: 50px;
+    }
+
+    #name {
+      font-size: 55px;
+    }
+
+    #desc {
+      margin-top: 8px;
+      font-size: 16px;
+    }
+
+    #myprojectsbtn {
+      width: 240px;
+      font-size: 20px;
+    }
+
+    .menu {
+      margin-left: -40px;
+      height: 80vh;
+    }
+  }

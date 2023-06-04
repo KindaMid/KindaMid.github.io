@@ -4,10 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Maksym | Home</title>
+    <link rel="icon" type="image/x-icon" href="Favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>W display</h1>
-    <p>L styling</p>
+    <div id="hero">
+        <div id="nav">
+            <img src="SignaturePNG.png" alt="Max Signature" id="logo">
+            <button class="container" onclick="BurgerMenu(this);openmenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </button>
+        </div>
+
+        <div id="menuitems" style="display: none;">
+            <ul class="menu">
+                <li class="menulinkscont">
+                    <a href="" class="menulinks">Home</a>
+                </li>
+
+                <li class="menulinkscont">
+                    <a href="" class="menulinks">About</a>
+                </li>
+
+                <li class="menulinkscont">
+                    <a href="" class="menulinks">Skills</a>
+                </li>
+
+                <li class="menulinkscont">
+                    <a href="" class="menulinks">Projects</a>
+                </li>
+            </ul>
+        </div>
+
+    <div id="introcenter">
+        <div id="intro">
+            <h1 id="welcome">Hello, I'm <b id="name">Maksym</b></h1>
+            <h3 id="desc">Designer. Musician. Developer.</h3>
+            <button id="myprojectsbtn"><a href="kindamid.github.io/">My Projects</a></button>
+        </div>
+    </div>
+
+    </div>
 </body>
+
+<script src="index.js"></script> 
 </html>
